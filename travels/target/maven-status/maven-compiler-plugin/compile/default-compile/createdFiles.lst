@@ -1,0 +1,12 @@
+com\tours\travels\models\dto\SignupRequest.class
+com\tours\travels\models\User.class
+com\tours\travels\security\SecurityConfig.class
+com\tours\travels\models\dto\LoginRequest.class
+com\tours\travels\security\JwtAuthenticationFilter.class
+com\tours\travels\TravelsApplication.class
+com\tours\travels\security\JwtUtil.class
+com\tours\travels\models\dto\AuthResponse.class
+com\tours\travels\controllers\AuthController.class
+com\tours\travels\repositories\UserRepository.class
+com\tours\travels\security\JwtAuthEntryPoint.class
+com\tours\travels\security\CustomUserDetailsService.class

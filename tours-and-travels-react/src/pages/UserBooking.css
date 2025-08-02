@@ -1,0 +1,116 @@
+.user-bookings {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://media.istockphoto.com/id/472560436/photo/houseboat-in-southern-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=J0QsYF5M2-22Vvu72d2wEU_9VdVWReUBsA5ooFizrWo=');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+/* .header-image {
+  background: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  padding: 100px 20px 60px;
+  text-align: center;
+  color: white;
+  backdrop-filter: brightness(0.7);
+} */
+
+.header-image h1 {
+  font-size: 4rem;
+  margin: 0;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.bookings-section {
+  padding: 40px 20px;
+}
+
+.bookings-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+    margin: auto;
+}
+
+.no-booking {
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.booking-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.booking-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.booking-card p {
+  margin: 4px 0;
+  color: #444;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.status.confirmed {
+  color: green;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.cancelled {
+  color: red;
+}
+
+.loading {
+  text-align: center;
+  padding: 80px;
+  font-size: 1.5rem;
+  color: #555;
+}

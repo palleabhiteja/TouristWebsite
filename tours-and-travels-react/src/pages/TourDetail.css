@@ -1,0 +1,270 @@
+/* TourDetail.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+  }
+  
+  .loading, .not-found {
+    text-align: center;
+    padding: 80px;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  /* Hero Section */
+  .header-image {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://media.istockphoto.com/id/472560436/photo/houseboat-in-southern-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=J0QsYF5M2-22Vvu72d2wEU_9VdVWReUBsA5ooFizrWo=');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .location-duration {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Tour Content Section */
+  .tour-content-section {
+    padding: 40px 20px;
+  }
+  
+  .tour-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  @media (min-width: 768px) {
+    .tour-content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .tour-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tour-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .tour-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  .tour-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .info-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+  }
+  
+  .info-card h2, .info-card h3 {
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .info-card p {
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0066cc;
+  }
+  
+  .price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    padding: 20px 20px 60px;
+    background: #f9f9f9;
+  }
+  
+  .booking-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .booking-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .booking-form {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #0066cc;
+  }
+  
+  .book-now-btn {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-now-btn:hover {
+    background: #004c99;
+  }
+  
+  /* Booking Success */
+  .booking-success {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .booking-success h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  .booking-success p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  /* Itinerary Section Styles */
+.itinerary-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.itinerary-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2f90ae;
+}
+
+.itinerary-days {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.itinerary-day {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.itinerary-day h3 {
+  color: #2f90ae;
+  margin-bottom: 0.5rem;
+}
+
+.itinerary-day p {
+  line-height: 1.6;
+}
+
+.no-itinerary {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.booking-error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}

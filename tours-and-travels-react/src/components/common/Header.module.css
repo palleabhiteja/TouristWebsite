@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #8a8f91;
+    padding: 10px 50px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header img {
+    height: 60px;
+    mix-blend-mode: normal;
+    filter: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #2f90ae;
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #2f90ae;
+    transition: width 0.3s ease;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+  .navLinkActive {
+    color: #ff0000;
+    font-size: 20px;
+    animation: blink 0.8s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+  }
+  
+  .navIcons {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  .contactLink {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .contactLink:hover {
+    color: #2f90ae;
+  }
+  
+  .contactLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #2f90ae;
+    transition: width 0.3s ease;
+  }
+  
+  .contactLink:hover::after {
+    width: 100%;
+  }
+  
+  .searchIcon, 
+  .loginIcon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: color 0.3s;
+  }
+  
+  .searchIcon:hover, 
+  .loginIcon:hover {
+    color: #2f90ae;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px 20px;
+    }
+    
+    .nav {
+      display: none;
+    }
+  }
